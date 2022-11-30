@@ -21,7 +21,7 @@ h2{
 footer{
     bottom:10px;
     text-align: center;
-    color:rgb(81, 81, 81)
+    color:rgb(81, 81, 81);
 }
 
 .flex-container{
@@ -29,7 +29,8 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height:89.4vh;
+    height:88.3vh;
+
 }
 
 #resume-opener{
@@ -46,6 +47,11 @@ footer{
     
 }
 
+#about-box{
+    border:white solid 3px;
+    margin:2% 20% 5.7% 20%;
+    height:500px;
+}
 .card-container{
     width:300px;
     height:400px;
@@ -83,4 +89,18 @@ footer{
 
 .card-links a{
     font-size: 120%;
+}
+
+#about-box{
+    display: block;
+}
+#bio-photo-area{
+    max-width:300px;
+    width:32.46%;
+    
+}
+#bio-photo{
+    max-width: inherit;
+
+
 }
