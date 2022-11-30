@@ -1,3 +1,4 @@
+
 /* *{
     border: solid red 2px;
 } */
@@ -6,6 +7,7 @@ body{
     color:white;
     background: rgb(14,40,59);
     background: linear-gradient(180deg, rgba(14,40,59,1) 0%, rgba(3,3,20,1) 66%);
+
 }
 
 h1{
@@ -13,17 +15,72 @@ h1{
 }
 
 h2{
-    font-size:60
-    px;
+    font-size:60px;
 }
+
+footer{
+    bottom:10px;
+    text-align: center;
+    color:rgb(81, 81, 81)
+}
+
 .flex-container{
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 94.3vh;
     flex-direction: column;
+    height:89.4vh;
 }
 
 #resume-opener{
     text-align: center;
+}
+
+#showcase{
+    max-width: 700px;
+    width:75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
+}
+
+.card-container{
+    width:300px;
+    height:400px;
+}
+
+.card{
+    height:inherit;
+    background-color: rgba(57, 57, 57, 0.6);
+    width:100%;
+}
+
+.card img{
+    width:100%;
+}
+
+.card-text{
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.card-title{
+    font-size: 200%;
+    margin-bottom: 0;
+}
+
+.card-subtitle{
+    font-size:150%;
+}
+
+.card-links{
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.card-links a{
+    font-size: 120%;
 }
