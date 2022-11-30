@@ -1,6 +1,6 @@
-*{
+/* *{
     border: solid red 2px;
-}
+} */
 
 body{
     color:white;
@@ -20,7 +20,7 @@ h2{
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 97vh;
+    height: 94.3vh;
     flex-direction: column;
 }
 
