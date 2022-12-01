@@ -1,4 +1,4 @@
-
+/*DEVELOPER: Julian Lechner, IS117-101, Fall 2022*/
 /* *{
     border: solid red 2px;
 } */
@@ -92,14 +92,23 @@ footer{
 
 #about-box{
     display: block;
+    padding:10px 40px;
+    height:800px;
 }
-#bio-photo-area{
-    max-width:300px;
-    width:32.46%;
-    
-}
+
 #bio-photo{
-    max-width: inherit;
+    max-width:300px;
+    width:100%;
+    float:left;
 
+}
 
+#bio-text{
+    float:right;
+    max-width: 400px;
+}
+
+#bio-text h2{
+    text-align: center;
+    text-decoration: underline;
 }
