@@ -1,4 +1,12 @@
 /*DEVELOPER: Julian Lechner, IS117-101, Fall 2022*/
+
+@media (max-width:600px){
+    #contact h1{
+        text-align: center;
+        font-size:50px;
+    }
+}
+
 /* *{
     border: solid red 2px;
 } */
@@ -7,6 +15,7 @@ body{
     color:white;
     background: rgb(14,40,59);
     background: linear-gradient(180deg, rgba(14,40,59,1) 0%, rgba(3,3,20,1) 66%);
+    min-height: 100vh !important;
 
 }
 
@@ -19,30 +28,29 @@ h2{
 }
 
 footer{
-    bottom:10px;
-    text-align: center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+     pointer-events: none;
 }
-
-.flex-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height:88.3vh;
-
+.container-lg{
+    
 }
 
 #resume-opener{
     text-align: center;
+
 }
 
 #showcase{
     max-width: 700px;
-    width:75%;
+    width:100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
+    margin:auto;
     
 }
 
@@ -53,7 +61,7 @@ footer{
 }
 .card-container{
     width:300px;
-    
+    max-height: 400px !important;
     height:400px;
 }
 
@@ -102,6 +110,7 @@ footer{
     max-width:445px;
     width:100%;
     float:left;
+    
 
 }
 
@@ -109,6 +118,7 @@ footer{
     float:right;
     max-width: 400px;
     width:100%;
+    margin:auto;
 }
 
 #bio-text h2{
