@@ -159,9 +159,56 @@
       return false;
 
     }
-
-
   </script>
+  <script>
+    //Retrieves current value of the Min Value Input
+    const minVal = () => {
+        let min = document.getElementById('min');
+        return Number.parseInt(min.value)
+    }
+    //Retrieves current value of the Max Value Input
+    const maxVal = () => {
+        let max = document.getElementById('max');
+        return Number.parseInt(max.value)
+    }
+
+    //Modifies output element with the current slider value
+    function setVal() {
+        let x = minVal();
+        let y = maxVal();
+        document.getElementById('outputLabel').innerHTML = `Generate a random number between ${x} and ${y}`;
+
+        console.log(`Max: ${y}`);
+    }
+
+    //Calculates random value in the range of 0 and the slider value
+    function rand() {
+        const remNice = document.getElementById('nice');
+        const roll = (remNice != null ? remNice.remove() : false);
+
+        console.log(`Min Val: ${minVal()}`);
+        console.log(`Max Val: ${maxVal() + 1}`);
+        if (minVal() <= maxVal()) {
+            let x = Math.floor(Math.random() * (maxVal() - minVal() + 1) + minVal());
+            event.preventDefault();
+            console.log(x);
+            document.getElementById('randomNumOutput').innerHTML = x;
+            if(x == 69)
+            {
+                console.log('nice.');
+                const funnyOut = document.createElement("output");
+                const node = document.createTextNode("nice.");
+                funnyOut.appendChild(node);
+                funnyOut.id="nice"
+                const element = document.getElementById("funnyOutput");
+                element.appendChild(funnyOut);
+            }
+        } else {
+            alert("Minimum Value cannot be above Maximum!");
+        }
+
+    }
+</script>
   <script src="" async defer></script>
 </body>
 
