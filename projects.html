@@ -3,59 +3,166 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/style/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/style/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <ul class="navbar-nav mr-auto">
-            <a class="navbar-brand" href="./index.html">Julian Lechner</a>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./portfolio.html">Big Projects</a>
-                <a class="dropdown-item active" href="./projects.html">Small Projects</a>
-              </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-    </nav>
-    <div class="container-lg">
-        <div class="flex-container" id="js">
-            <div>
-              
-            </div>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <ul class="navbar-nav mr-auto">
+      <a class="navbar-brand" href="./index.html">Julian Lechner</a>
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./about.html">About</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Portfolio
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./portfolio.html">Big Projects</a>
+          <a class="dropdown-item active" href="./projects.html">Small Projects</a>
         </div>
-        <footer class="text-muted">&COPY; Julian Lechner 2022<br> Privacy Statement | Terms of Service</footer>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-lg">
+    <div class="text-center" id="js">
+      <h1>Small JS Projects</h1>
+      <div class="scroll-container">
+        <section id="translate">
+          <h3>English to Pig Latin</h3>
+          <div class="form-group" class="center" name="Translate">
+            <form id="translator">
+              <textarea id="textbox" class="form-control" placeholder="Insert text that you want translated"
+                rows="10"></textarea>
+              <input class="btn btn-primary" type="button" value="Translate" onclick="translatePig()">
+            </form>
+            <h3>Output:</h3>
+            <output id="translatedOutput"></output>
+        </section>
+        <section id="rand" name="random number">
+          <output id="outputLabel">Generate a random number between 0 and 100</output>
+          <form name="randomNum" class="center">
+            <div name="inputs">
+              <div class="row">
+                <div class="col-6">
+                  <label for="min">Min</label>
+                  <input class="form-control" id="min" type="number" oninput="setVal()" value="0">
+                </div>
+                <div class="col-6">
+                  <label for="max">Max</label>
+                  <input class="form-control" id="max" type="number" oninput="setVal()" value="100">
+                </div>
+              </div>
+              <div name="button">
+                <input class="btn btn-primary mb-2" type="button" value="Generate" onclick="rand()">
+              </div>
+              <div id="funnyOutput" class="center" style="font-family:Prompt;">
+
+              </div>
+            </div>
+
+            <output id="randomNumOutput">0</output>
+          </form>
+        </section>
+      </div>
     </div>
-    
-    <script src="" async defer></script>
+    <footer class="text-muted">&COPY; Julian Lechner 2022<br> Privacy Statement | Terms of Service</footer>
+  </div>
+  <script>
+    function resultString(words) {
+      let result = [];
+      let endOfSentance;
+      for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].toLowerCase();
+        endOfSentance = false;
+        console.log(words[i]);
+
+
+        if (words[i].includes('.')) { //Checks for a period at the end of the sentence.
+          words[i] = words[i].substring(0, words[i].length - 1) //Removes the period
+          endOfSentance = true;//Used to track that there was a period so it can be added back later
+        }
+
+        if (isVowel(words[i][0])) {
+          result.push(`${words[i]}way`); //Vowel
+        } else if (twoCons(words[i])) {
+          let chars = words[i].substr(0, 2);
+          result.push(words[i].substring(2) + chars + 'ay'); //Starts with two consonants
+        } else {
+          let chars = words[i].substring(0, 1);
+          result.push(words[i].substring(1) + chars + 'ay'); //Starts with one consonant and a vowel
+        }
+
+
+        if (endOfSentance) {
+          result.push("."); //adds the period back into the sentence.
+        }
+      }
+      return result.join(" ");
+    }
+
+
+    let twoCons = input => {//checks if a string starts with two consonants
+      if (!isVowel(input[0]) && !isVowel(input[1])) {
+        return true;
+      }
+    }
+
+    function translatePig() {
+      let resultArray = [];
+
+      const text = document.getElementById('textbox').value;
+      console.log(`English: ${text}`);
+      let words = text.split(" ");
+      console.log(`Array: ${words}`);
+      console.log(words.length);
+
+      if ((words === undefined || words.length == 1) && words[0] == "") {
+        alert("Please input your text!");
+      }
+      else {
+        document.getElementById('translatedOutput').innerHTML = resultString(words);
+      }
+    }
+
+    function isVowel(input) { //checks if input is a vowel
+      const vowels = ['a', 'e', 'i', 'o', 'u']
+      for (let i = 0; i < vowels.length; i++) {
+        if (input === vowels[i]) {
+          return true;
+          break;
+        }
+      }
+      return false;
+
+    }
+
+
+  </script>
+  <script src="" async defer></script>
 </body>
 
 </html>
