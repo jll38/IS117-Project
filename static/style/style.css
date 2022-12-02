@@ -88,6 +88,9 @@ footer{
     width:100%;
 }
 
+.bg-darker{
+    background-color: rgba(37, 37, 37, 0.526) !important;
+}
 .card-text{
     text-align: left;
     padding: 5px 10px;
