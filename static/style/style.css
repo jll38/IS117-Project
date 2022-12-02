@@ -16,6 +16,7 @@ body{
     background: rgb(14,40,59);
     background: linear-gradient(180deg, rgba(14,40,59,1) 0%, rgba(3,3,20,1) 66%);
     min-height: 100vh !important;
+    animation: fadeIn .5s;
 
 }
 
@@ -51,13 +52,24 @@ footer{
     align-items: flex-end;
     flex-wrap: wrap;
     margin: 50px auto;
-    
 }
 
-#about-box{
-    border:white solid 3px;
-    margin:2% 20% 5.7% 20%;
-    height:500px;
+.bio-box{
+    width: 60%;
+    margin:auto;
+}
+.bio-box h2{
+    font-size:40px;
+}
+.bio-img{
+    max-width:400px;
+    width:80%;
+    float:left;
+    border-radius: 20px;
+}
+#bio-text{
+    float:right;
+    max-width: 400px;
 }
 .card-container{
     width:300px;
@@ -76,7 +88,7 @@ footer{
     padding:20px;
     border-radius: 10px;
     background-color: rgba(37, 37, 37, 0.526);
-    height:600px;
+    height:700px;
     overflow-y:scroll;
     overflow-x:hidden;
     margin: 30px auto;
@@ -89,7 +101,7 @@ footer{
 }
 
 .bg-darker{
-    background-color: rgba(37, 37, 37, 0.526) !important;
+    background-color: rgba(37, 37, 37, 0.426) !important;
 }
 .card-text{
     text-align: left;
@@ -115,29 +127,8 @@ footer{
     font-size: 120%;
 }
 
-#about-box{
-    display: block;
-    padding:10px 40px;
-    height:800px;
-}
 
-#bio-photo{
-    max-width:445px;
-    width:100%;
-    float:left;
-    
-
-}
-
-#bio-text{
-    float:right;
-    max-width: 400px;
-    width:100%;
-    margin:auto;
-}
-
-#bio-text h2{
-    text-align: center;
-    text-decoration: underline;
-    font-size:40px;
-}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
